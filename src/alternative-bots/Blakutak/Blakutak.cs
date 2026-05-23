@@ -68,14 +68,14 @@ public class Blakutak : Bot
         TargetSpeed = 8; // Pastikan tetap bergerak cepat
     }
 
-    // D6: Escape dari dinding — reverse max speed & belok tajam, non-blocking
+    // D6: Kabur dari dinding — reverse max speed & belok tajam, non-blocking
     public override void OnHitWall(HitWallEvent e)
     {
         // Bounce off!
         ReverseDirection();
     }
 
-    // ReverseDirection: Switch from ahead to back & vice versa
+    // ReverseDirection: Berpindah pergerakan dari maju ke mundur dan sebaliknya
     public void ReverseDirection()
     {
         if (movingForward)
