@@ -33,8 +33,7 @@ public class BotGajelas : Bot
 
             if (_sweeping)
             {
-                // FIX: If we still have last-known enemy positions, steer radar there directly
-                //      instead of doing a blind 45° generic sweep
+                //Fungsi ketika bot memiliki posisi musuh yang diketahui terakhir maka bot akan diarahkan kesana oleh radar
                 if (_enemies.Count > 0)
                 {
                     double bx = 0, by = 0, bd = double.MaxValue;
