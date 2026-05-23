@@ -55,15 +55,15 @@ public class Gaspolbot : Bot
 
     public override void OnScannedBot(ScannedBotEvent e)
     {
-        // Aim gun directly at the scanned bot
+        //Mengarahkan meriam ke arah bot yang terkena radar
         SetTurnGunLeft(GunBearingTo(e.X, e.Y));
 
-        // Calculate distance to the scanned bot
+        // Fungsi matematika untuk menghitung jarak
         double dx = e.X - X;
         double dy = e.Y - Y;
         double distance = Math.Sqrt(dx * dx + dy * dy);
 
-        // Adaptive firepower: closer = stronger
+        // Fungsi pemilihan daya tembak
         double firePower = distance < 150 ? 3 : distance < 300 ? 2 : 1;
 
         Fire(firePower);
