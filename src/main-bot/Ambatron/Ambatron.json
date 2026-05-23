@@ -1,0 +1,10 @@
+{
+  "name": "Ambatron",
+  "version": "1.0",
+  "authors": ["Fand"],
+  "description": "Robot jomok titisan mas amba",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}
